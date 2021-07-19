@@ -1,0 +1,12 @@
+galaxy_info:
+  author: Federico Razzoli
+  description: Ansible role to manage PMM Server on Kubernetes.
+  company: Vettabase
+  license: BSD-3-Clause
+  min_ansible_version: 2.9
+  platforms:
+    - name: Kubernetes
+
+  galaxy_tags: [ pmm, pmm-server, mariadb-monitoring, mysql-monitoring, postgresql-monitoring ]
+
+dependencies: []
