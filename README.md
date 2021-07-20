@@ -13,6 +13,18 @@ Red Hat Enterprise Linux Server release 7.9 (Maipo).
 Ansible version: 2.9.
 
 
+## Variables
+
+A PMM Server and all the clients connecting to it should form a hostgroup.
+These variables should be specified at group level. This will allow us to specify
+this information once, and make it available to all hosts that need it.
+
+* `pmm_server_host`: PMM Server IP or hostname. Hint: you may want to specify this in your inventory.
+* `pmm_server_port`: PMM Server port. Hint: you may want to specify this in your inventory.
+* `pmm_server_user`: Username used by PMM Clients to access PMM Server.
+* `pmm_server_password`: Password for `pmm_server_user`.
+
+
 ## Copyright and License
 
 Copyright  2021  Vettabase Ltd
