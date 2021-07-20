@@ -25,6 +25,12 @@ this information once, and make it available to all hosts that need it.
 * `pmm_server_password`: Password for `pmm_server_user`.
 
 
+## Tags
+
+- `pmm`: Run this role and PMM client roles that use this tag.
+- `pmm-server`: Run this role.
+
+
 ## Copyright and License
 
 Copyright  2021  Vettabase Ltd
