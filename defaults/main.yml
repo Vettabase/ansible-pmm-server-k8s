@@ -1,0 +1,4 @@
+---
+
+pmm_server_user: pmm # don't change
+pmm_server_password: secret
