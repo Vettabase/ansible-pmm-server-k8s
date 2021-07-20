@@ -9,4 +9,4 @@ galaxy_info:
 
   galaxy_tags: [ pmm, pmm-server, mariadb-monitoring, mysql-monitoring, postgresql-monitoring ]
 
-dependencies: []
+dependencies: [ ]
