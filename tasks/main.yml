@@ -1,14 +1,17 @@
 ---
 
 - name: Add Percona Helm repository
+  tags: [ pmm, pmm-server ]
   helm_repository:
     name: percona
     repo_url: https://percona-charts.storage.googleapis.com
 
 - name: Build repository cache
+  tags: [ pmm, pmm-server ]
   helm_repository:
     update_repo_cache: yes
 
 - name: Install pmm-server
+  tags: [ pmm, pmm-server ]
   shell: >
     helm install monitoring percona/pmm-server --set platform=kubernetes --version 2.7.0 --set "credentials.password={{ pmm_server_password }}"
