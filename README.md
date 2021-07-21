@@ -30,6 +30,7 @@ this information once, and make it available to all hosts that need it.
 - `pmm`: Run this role and PMM client roles that use this tag.
 - `pmm-server`: Run this role.
 - `validate`: Validate this role and other roles that support this tag.
+- `pmm-validate`: Validate this role and other PMM Server and Client roles that support this role.
 - `pmm-server-validate`: Validate this role.
 
 

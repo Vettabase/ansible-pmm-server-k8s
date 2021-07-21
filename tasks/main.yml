@@ -1,7 +1,7 @@
 ---
 
 - name: Include validate.yml
-  tags: [ pmm, pmm-server, validate, pmm-server-validate ]
+  tags: [ pmm, pmm-server, validate, pmm-validate, pmm-server-validate ]
   include: validate.yml
 
 - name: Add Percona Helm repository
