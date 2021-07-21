@@ -1,0 +1,13 @@
+---
+
+# Validate variables needed by this role
+
+- name: Validate pmm_server_user
+  assert:
+    that: pmm_server_user | length > 0
+    fail_msg: pmm_server_user is missing
+
+- name: Validate pmm_server_password
+  assert:
+    that: pmm_server_password | length > 0
+    fail_msg: pmm_server_password is missing
