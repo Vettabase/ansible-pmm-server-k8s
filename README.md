@@ -41,6 +41,12 @@ Validation (use these tags after making changes):
 
 ## Examples
 
+Validating changes to PMM Server configuration:
+
+```
+ansible-playbook --check -t pmm-server-validate -l pmm_server -i mariadb mariadb.yml
+```
+
 Deploying PMM Server on a host group called `pmm_server`:
 
 ```
