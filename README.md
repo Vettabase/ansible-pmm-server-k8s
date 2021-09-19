@@ -39,6 +39,15 @@ Validation (use these tags after making changes):
 - `pmm-server-validate`: Validate this role.
 
 
+## Examples
+
+Deploying PMM Server on a host group called `pmm_server`:
+
+```
+ansible-playbook -t pmm-server -l pmm_server -i mariadb mariadb.yml
+```
+
+
 ## Copyright and License
 
 Copyright  2021  Vettabase Ltd
