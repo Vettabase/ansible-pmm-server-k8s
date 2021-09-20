@@ -13,13 +13,13 @@
 
 - name: Add Percona Helm repository
   tags: [ pmm, pmm-server ]
-  helm_repository:
+  community.kubernetes.helm_repository:
     name: percona
     repo_url: https://percona-charts.storage.googleapis.com
 
 - name: Build repository cache
   tags: [ pmm, pmm-server ]
-  helm_repository:
+  community.kubernetes.helm_repository:
     update_repo_cache: yes
 
 - name: Install pmm-server
