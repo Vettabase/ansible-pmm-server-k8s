@@ -11,6 +11,12 @@
   tags: [ pmm, pmm-server, validate, pmm-validate, pmm-server-validate ]
   include: validate.yml
 
+- name: Load relevant Kubernetes module
+  tags: [ pmm, pmm-server ]
+  # there doesn't seem to exist an Ansible module for this action
+  shell:
+    "module load {{ kubernetes_module }}"
+
 - name: Add Percona Helm repository
   tags: [ pmm, pmm-server ]
   community.kubernetes.helm_repository:
